@@ -1,0 +1,161 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2023-07-16 14:28:35.379450",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "hotel_details_section",
+  "voucher_number",
+  "customer",
+  "reservation_date",
+  "check_in_date",
+  "check_out_date",
+  "column_break_7",
+  "hotel",
+  "room_type",
+  "number_of_rooms",
+  "number_of_adults",
+  "number_of_children",
+  "total_guests",
+  "status_section",
+  "voucher_status",
+  "voucher_amount",
+  "column_break_17",
+  "payment_status",
+  "booking_reference",
+  "request_section",
+  "special_requests"
+ ],
+ "fields": [
+  {
+   "fieldname": "hotel_details_section",
+   "fieldtype": "Section Break",
+   "label": "Hotel Details"
+  },
+  {
+   "fieldname": "voucher_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Voucher Number"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "reservation_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Reservation Date"
+  },
+  {
+   "fieldname": "check_in_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Check in Date"
+  },
+  {
+   "fieldname": "check_out_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Check Out Date"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "hotel",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Hotel"
+  },
+  {
+   "fieldname": "room_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Room Type"
+  },
+  {
+   "fieldname": "number_of_rooms",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Number of Rooms"
+  },
+  {
+   "fieldname": "number_of_adults",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Number of Adults"
+  },
+  {
+   "fieldname": "number_of_children",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Number of Children"
+  },
+  {
+   "fieldname": "total_guests",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Total Guests"
+  },
+  {
+   "fieldname": "status_section",
+   "fieldtype": "Section Break",
+   "label": "Status"
+  },
+  {
+   "fieldname": "voucher_status",
+   "fieldtype": "Data",
+   "label": "Voucher Status"
+  },
+  {
+   "fieldname": "voucher_amount",
+   "fieldtype": "Currency",
+   "label": "Voucher Amount"
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "payment_status",
+   "fieldtype": "Data",
+   "label": "Payment Status"
+  },
+  {
+   "fieldname": "booking_reference",
+   "fieldtype": "Data",
+   "label": "Booking Reference"
+  },
+  {
+   "fieldname": "request_section",
+   "fieldtype": "Section Break",
+   "label": "Request"
+  },
+  {
+   "fieldname": "special_requests",
+   "fieldtype": "Text",
+   "label": "Special Requests"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-07-16 14:47:13.780245",
+ "modified_by": "Administrator",
+ "module": "Travel Module",
+ "name": "Hotel Voucher",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

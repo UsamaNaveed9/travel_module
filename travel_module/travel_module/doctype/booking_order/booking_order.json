@@ -1,0 +1,137 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-07-16 15:08:27.449942",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "customer",
+  "booking_date",
+  "total_amount",
+  "refund_requested",
+  "refund_processed",
+  "column_break_6",
+  "payment_status",
+  "refund_status",
+  "refund_date",
+  "refund_notes",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "BO-.YY.-####"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "booking_date",
+   "fieldtype": "Date",
+   "label": "Booking Date"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "label": "Total Amount"
+  },
+  {
+   "fieldname": "payment_status",
+   "fieldtype": "Select",
+   "label": "Payment Status",
+   "options": "Paid\nPartially Paid\nUnpaid"
+  },
+  {
+   "fieldname": "refund_requested",
+   "fieldtype": "Currency",
+   "label": "Refund Requested"
+  },
+  {
+   "fieldname": "refund_processed",
+   "fieldtype": "Currency",
+   "label": "Refund Processed"
+  },
+  {
+   "fieldname": "refund_status",
+   "fieldtype": "Select",
+   "label": "Refund Status",
+   "options": "Pending\nProcessed\nCompleted"
+  },
+  {
+   "fieldname": "refund_date",
+   "fieldtype": "Date",
+   "label": "Refund Date"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "refund_notes",
+   "fieldtype": "Small Text",
+   "label": "Refund Notes"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Booking Order",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-07-16 15:09:09.049464",
+ "modified_by": "Administrator",
+ "module": "Travel Module",
+ "name": "Booking Order",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

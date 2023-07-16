@@ -1,0 +1,132 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-07-16 16:18:53.135497",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "airline",
+  "reconciliation_month",
+  "reconciliation_status",
+  "sales_invoice",
+  "column_break_6",
+  "sales_amount",
+  "commission_amount",
+  "iata_sales_amount",
+  "iata_commission_amount",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "IATA-.YY.-.####"
+  },
+  {
+   "fieldname": "airline",
+   "fieldtype": "Link",
+   "label": "Airline",
+   "options": "Airline"
+  },
+  {
+   "fieldname": "reconciliation_month",
+   "fieldtype": "Date",
+   "label": "Reconciliation Month"
+  },
+  {
+   "fieldname": "sales_invoice",
+   "fieldtype": "Link",
+   "label": "Sales Invoice",
+   "options": "Sales Invoice"
+  },
+  {
+   "fieldname": "sales_amount",
+   "fieldtype": "Currency",
+   "label": "Sales Amount"
+  },
+  {
+   "fieldname": "commission_amount",
+   "fieldtype": "Currency",
+   "label": "Commission Amount"
+  },
+  {
+   "fieldname": "iata_sales_amount",
+   "fieldtype": "Currency",
+   "label": "IATA Sales Amount"
+  },
+  {
+   "fieldname": "iata_commission_amount",
+   "fieldtype": "Currency",
+   "label": "IATA Commission Amount"
+  },
+  {
+   "fieldname": "reconciliation_status",
+   "fieldtype": "Select",
+   "label": "Reconciliation Status",
+   "options": "Pending\nReconciled"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "IATA Reconciliation",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-07-16 16:19:29.131881",
+ "modified_by": "Administrator",
+ "module": "Travel Module",
+ "name": "IATA Reconciliation",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
